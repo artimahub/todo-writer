@@ -51,10 +51,6 @@ It writes a marker immediately above each undocumented declaration:
 
 ## Things worth knowing
 
-- **Commit the markers locally if you like; just don't send them upstream.** A commit made right
-  after the markers go in gives you something to diff against, so you can read exactly what the
-  agent did, marker by marker. Before you open a pull request, squash it away — replacing the
-  markers *is* the work, so the branch you offer should not have any left in it.
 - **Safe to re-run.** A second run over an already-marked tree finds nothing, so it will not
   double-mark. And if a step goes wrong and you revert it, re-running puts the markers back.
 - **It leaves other TODOs alone.** The marker is `TODO FILL IN`, which does not collide with

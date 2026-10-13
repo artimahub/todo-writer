@@ -1,0 +1,7 @@
+# todo-writer runtime output
+return-cleanup/
+
+# sbt build output
+target/
+project/target/
+project/project/

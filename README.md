@@ -51,9 +51,10 @@ It writes a marker immediately above each undocumented declaration:
 
 ## Things worth knowing
 
-- **Don't commit the markers.** They are scaffolding. You run this locally, your pipeline replaces
-  each marker with a real doc comment, and by the time you have something to commit the markers are
-  gone — because replacing them *is* the work.
+- **Commit the markers locally if you like; just don't send them upstream.** A commit made right
+  after the markers go in gives you something to diff against, so you can read exactly what the
+  agent did, marker by marker. Before you open a pull request, squash it away — replacing the
+  markers *is* the work, so the branch you offer should not have any left in it.
 - **Safe to re-run.** A second run over an already-marked tree finds nothing, so it will not
   double-mark. And if a step goes wrong and you revert it, re-running puts the markers back.
 - **It leaves other TODOs alone.** The marker is `TODO FILL IN`, which does not collide with

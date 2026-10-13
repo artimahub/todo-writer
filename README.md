@@ -78,3 +78,7 @@ Usage: todo-writer <folder> [options]
 ```
 
 Pull requests welcome — fork it if you want to send one.
+
+## License
+
+Apache License 2.0. See [LICENSE](LICENSE). Copyright 2025-2026 Artima, Inc.
